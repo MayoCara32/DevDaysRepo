@@ -1,0 +1,11 @@
+root = true
+
+[*.cs]
+# Unused variables
+dotnet_diagnostic.IDE0059.severity = warning
+
+# Async/await usage
+dotnet_diagnostic.CA2007.severity = warning  # Do not directly await a Task
+dotnet_diagnostic.CA2012.severity = warning  # Use ValueTasks correctly
+dotnet_diagnostic.CA2016.severity = warning  # Forward the 'CancellationToken' parameter to methods that take one
+dotnet_diagnostic.CA2017.severity = warning  # Parameter count mismatch
